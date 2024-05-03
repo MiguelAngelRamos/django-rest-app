@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from productos.views import HelloWorld
+from productos.api.views import ProductoListView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HelloWorld.as_view(), name="hello")
-    # path('api/productos/',)
+    path('api/productos/', ProductoListView.as_view(), name  = "productos")
+    # path('', HelloWorld.as_view(), name="hello")
+    
 ]
