@@ -4,9 +4,11 @@ from productos.models import Producto
 from rest_framework.response import Response
 from productos.api.serializers import ProductoSerializer
 from rest_framework.viewsets import ViewSet, ModelViewSet
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 
 
 class ProductModelViewSet(ModelViewSet):
+    permission_classes = [IsAdminUser]
     serializer_class = ProductoSerializer
     queryset  = Producto.objects.all()
     
