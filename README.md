@@ -3,7 +3,7 @@
 1. Para instalar las dependencias de este proyecto porfavor escriba el siguiente comando:
 
 ```sh
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 Nota: recuerda que antes debes tener activado el entorno virtual
