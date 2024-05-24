@@ -6,6 +6,10 @@
 pip install -r requirements.txt
 ```
 
+```sh
+pip install djangorestframework-simplejwt
+```
+
 Nota: recuerda que antes debes tener activado el entorno virtual
 
 
@@ -80,4 +84,11 @@ Si marca error es probable que necesitas actualizar el setuptools
 
 ```sh
 pip install --upgrade setuptools
+```
+
+
+## Para poder integrar una tecnologia de Frontend
+
+```sh
+ pip install django-cors-headers
 ```
