@@ -1,3 +1,4 @@
+from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,3 +131,7 @@ AUTH_USER_MODEL = 'user.User'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
 ]
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=30)
+}
